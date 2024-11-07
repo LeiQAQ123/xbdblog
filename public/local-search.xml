@@ -8,13 +8,21 @@
     <link href="/2024/11/07/Windows-on-Arm%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
     <url>/2024/11/07/Windows-on-Arm%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</url>
     
-    <content type="html"><![CDATA[<h2 id="Windows-on-Arm发展历程"><a href="#Windows-on-Arm发展历程" class="headerlink" title="Windows on Arm发展历程"></a>Windows on Arm发展历程</h2><p>Windows On Arm以下均简称WoA。<br>为了进一步推广微软系统的版图，而不是焊死在X86的战车上。早在2012年，微软为了抢占安卓平板和iPad的市场份额，推出了surface平板产品线。其中就由搭载Arm处理器的surface RT，该系统正是一款基于ARM架构的操作系统，生态上虽然有IE有Office 2013 RT，但是最致命的一点是-它和同期的Windows Phone一样，不支持传统Win32应用！只能运行应用商店中的Metro应用，管Metro（现在称为UWP）具有跨硬件平台特性，但因为绝大多数软件都是为桌面Windows x86平台开发，而软件开发商推出Metro版应用的话就需要推翻重做，工程量更大，所以很少有人为Windows RT适配软件，这也就导致了Windows RT在生态上的缺失。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="对Windows-on-Arm的控诉"><a href="#对Windows-on-Arm的控诉" class="headerlink" title="对Windows on Arm的控诉"></a>对Windows on Arm的控诉</h2><p>自2012年微软首次推出基于ARM架构的Windows RT以来，Windows on ARM的发展始终没有达到预期的大放异彩。尽管近年来微软和高通等公司不断努力推进ARM架构在PC领域的应用，但Windows on ARM依然面临诸多挑战，导致其发展缓慢。</p><p>早期的Windows RT设备因性能不足、应用兼容性差和用户体验不佳而广受诟病。例如，2012年推出的Surface RT搭载NVIDIA Tegra处理器和仅有的32GB存储空间，使得其难以满足用户对性能和存储的基本需求。这给消费者留下了Windows平板电脑“低配低能”的负面印象，阻碍了后续产品的市场表现。</p><p>在软件生态方面，Windows on ARM面临严重的兼容性问题。由于x86架构长期以来一直是Windows平台的主流，大多数软件开发商优先考虑x86架构，而ARM架构的设备常常面临无法运行64位应用的窘境。虽然微软尝试通过模拟器和转译技术解决这个问题，但这些解决方案往往会导致性能下降，影响用户体验。</p><p>尽管近年来ARM架构在能效和计算能力上取得了显著进步，如高通的骁龙8cx Gen 3处理器，已经在性能上媲美甚至超过一些低端x86处理器，但消费者对Windows on ARM设备的固有偏见仍未完全消除。这种心理障碍使得很多用户不愿冒险尝试ARM版Windows设备，特别是在专业和游戏应用场景中。</p><p>随着骁龙X Elite的发布，市场对Windows on Arm的信心又一次提振了起来。因为它的纸面参数真的很强，尤其是高通的自研大核，可以说是吊打M1系列芯片。结果上市之后微软和高通又给我们拉了一坨大的。首发的笔记本没有一个5000RMB的，而且软件的兼容性似乎又出现了问题，Windows on Arm没有几个软件支持原生ARM架构的。而且转译效率极差，总体性能还不如M1呢。</p><p>那能耗呢？能耗比确实优秀，结果英特尔的“月亮湖”一出，直接被吊打，可以说是相当惨败了。</p><h2 id="为何发展成这样"><a href="#为何发展成这样" class="headerlink" title="为何发展成这样"></a>为何发展成这样</h2><p>可以说Windows on Arm能发展到今天这步田地，微软可以说首锅，主要是微软最近几年的战略往往是一个极端跳到另外一个极端。芯片只采用一家的，从英伟达到高通，一条路走到黑，拦都拦不住的那种。对于这方面，微软本身就有一手好牌，完完全全可以放开Windows on Arm的准入门槛，事实上也完全可以放开刷机的方式提升Windows on Arm的设备使用数，也不至于现在刷Windows on Arm成为小众圈子</p><p>还有就是微软沉重的历史包袱，为了向下兼容，不断累加屎山代码,再加上开发者对Windows on Arm的软件开发也不上心，就导致Windows牢牢地和X86绑在了一起，成为其在操作系统的不可逾越的护城河，也是Windows on Arm仍然是一潭死水的原因。</p><p>文章到此就结束了，感谢你的阅读。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>科技杂谈</category>
+      
+    </categories>
     
     
     <tags>
       
-      <tag>Windows on Arm</tag>
+      <tag>Windows on Arm, 操作系统</tag>
       
     </tags>
     
@@ -50,35 +58,6 @@
       <tag>网站搭建</tag>
       
       <tag>github的妙用</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>TEST</title>
-    <link href="/2024/11/06/test/"/>
-    <url>/2024/11/06/test/</url>
-    
-    <content type="html"><![CDATA[<h2 id="你好世界"><a href="#你好世界" class="headerlink" title="你好世界"></a>你好世界</h2><p>这是小不点用于测试的文章 </p><p><img src="/img/erciyuan.jpg" alt="二次元头像"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>test</category>
-      
-      <category>test2</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>test</tag>
-      
-      <tag>test2</tag>
       
     </tags>
     
