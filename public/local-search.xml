@@ -4,16 +4,37 @@
   
   
   <entry>
+    <title>Windows on Arm的那些事儿</title>
+    <link href="/2024/11/07/Windows-on-Arm%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"/>
+    <url>/2024/11/07/Windows-on-Arm%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Windows-on-Arm发展历程"><a href="#Windows-on-Arm发展历程" class="headerlink" title="Windows on Arm发展历程"></a>Windows on Arm发展历程</h2><p>Windows On Arm以下均简称WoA。<br>为了进一步推广微软系统的版图，而不是焊死在X86的战车上。早在2012年，微软为了抢占安卓平板和iPad的市场份额，推出了surface平板产品线。其中就由搭载Arm处理器的surface RT，该系统正是一款基于ARM架构的操作系统，生态上虽然有IE有Office 2013 RT，但是最致命的一点是-它和同期的Windows Phone一样，不支持传统Win32应用！只能运行应用商店中的Metro应用，管Metro（现在称为UWP）具有跨硬件平台特性，但因为绝大多数软件都是为桌面Windows x86平台开发，而软件开发商推出Metro版应用的话就需要推翻重做，工程量更大，所以很少有人为Windows RT适配软件，这也就导致了Windows RT在生态上的缺失。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Windows on Arm</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何低成本搭建个人博客</title>
     <link href="/2024/11/06/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <url>/2024/11/06/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><p>1.一个github账号；<br>2.一个gitee账号（可选）；<br>3.一个域名（可选，不过大部分域名都要购买获取，免费申请到域名很麻烦）；<br>4.一台个人电脑并准备科学的上网环境。</p><h2 id="2-如何做"><a href="#2-如何做" class="headerlink" title="2.如何做"></a>2.如何做</h2><p>1.打开电脑，在浏览器输入如下网址:</p><blockquote><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p></blockquote><p>2.跟着官方文档安装相关前置软件（需要科学环境）；<br>3.在github上创建一个仓库（名称随意），并用2中所下载的git下载到本地并同步，具体步骤请自行百度（需要科学环境）；<br>4.打开本地仓库的文件夹右键，点击”Open Git Bash here“，并在新出现的页面中敲击如下4个命令：</p><blockquote><p>hexo init<br>hexo install<br>hexo g<br>hexo s</p></blockquote><p>5.生成完成后，预览。完成后，按下”ctrl+C“即可关闭博客；<br>6.将本地文件用git上传到gitHub（需要科学环境）；<br>7.浏览器打开vercel，跟着官方操作将github的项目部署到vercel（需要科学环境）；<br>至此，你的个人博客搭建完毕，以下是附加功能。</p><h2 id="3-附加功能"><a href="#3-附加功能" class="headerlink" title="3.附加功能"></a>3.附加功能</h2><p>1.自定义域名（vercel添加自动域名请自行百度）；<br>2.用gitee同步，去除科学环境（具体操作请自行百度）；<br>3.博客自定义主题，请参考hexo的官方文档<br>如果相对这方面进行咨询，请致电我的邮件<a href="mailto:&#120;&#x62;&#100;&#x40;&#120;&#105;&#97;&#x6f;&#x62;&#117;&#x64;&#x69;&#x61;&#110;&#x2e;&#x65;&#x75;&#x2e;&#111;&#x72;&#x67;">&#120;&#x62;&#100;&#x40;&#120;&#105;&#97;&#x6f;&#x62;&#117;&#x64;&#x69;&#x61;&#110;&#x2e;&#x65;&#x75;&#x2e;&#111;&#x72;&#x67;</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><p>1.一个github账号；<br>2.一个gitee账号（可选）；<br>3.一个域名（可选，不过大部分域名都要购买获取，免费申请到域名很麻烦）；<br>4.一台个人电脑并准备科学的上网环境。</p><h2 id="2-如何做"><a href="#2-如何做" class="headerlink" title="2.如何做"></a>2.如何做</h2><p>1.打开电脑，在浏览器输入如下网址:</p><blockquote><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p></blockquote><p>2.跟着官方文档安装相关前置软件（需要科学环境）；<br>3.在github上创建一个仓库（名称随意），并用2中所下载的git下载到本地并同步，具体步骤请自行百度（需要科学环境）；<br>4.打开本地仓库的文件夹右键，点击”Open Git Bash here“，并在新出现的页面中敲击如下4个命令：</p><blockquote><p>hexo init<br>hexo install<br>hexo g<br>hexo s</p></blockquote><p>5.生成完成后，预览。完成后，按下”ctrl+C“即可关闭博客；<br>6.将本地文件用git上传到gitHub（需要科学环境）；<br>7.浏览器打开vercel，跟着官方操作将github的项目部署到vercel（需要科学环境）；<br>至此，你的个人博客搭建完毕，以下是附加功能。</p><h2 id="3-附加功能"><a href="#3-附加功能" class="headerlink" title="3.附加功能"></a>3.附加功能</h2><p>1.自定义域名（vercel添加自动域名请自行百度）；<br>2.用gitee同步，去除科学环境（具体操作请自行百度）；<br>3.博客自定义主题，请参考hexo的官方文档<br>如果相对这方面进行咨询，请致电我的邮件<a href="mailto:&#x78;&#98;&#100;&#x40;&#x78;&#x69;&#97;&#111;&#98;&#x75;&#x64;&#x69;&#x61;&#x6e;&#x2e;&#x65;&#x75;&#x2e;&#111;&#114;&#103;">&#x78;&#98;&#100;&#x40;&#x78;&#x69;&#97;&#111;&#98;&#x75;&#x64;&#x69;&#x61;&#x6e;&#x2e;&#x65;&#x75;&#x2e;&#111;&#114;&#103;</a></p>]]></content>
     
     
     <categories>
       
       <category>科技</category>
+      
+      <category>轻松教程</category>
       
     </categories>
     
