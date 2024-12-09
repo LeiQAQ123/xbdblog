@@ -4,6 +4,41 @@
   
   
   <entry>
+    <title>如何低成本搭建个人博客</title>
+    <link href="/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><p>1.一个github账号；<br>2.一个gitee账号（可选）；<br>3.一个域名（可选，不过大部分域名都要购买获取，免费申请到域名很麻烦）；<br>4.一台个人电脑并准备科学的上网环境。</p><h2 id="2-如何做"><a href="#2-如何做" class="headerlink" title="2.如何做"></a>2.如何做</h2><p>1.打开电脑，在浏览器输入如下网址:</p><blockquote><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p></blockquote><p>2.跟着官方文档安装相关前置软件（需要科学环境）；<br>3.在github上创建一个仓库（名称随意），并用2中所下载的git下载到本地并同步，具体步骤请自行百度（需要科学环境）；<br>4.打开本地仓库的文件夹右键，点击”Open Git Bash here“，并在新出现的页面中敲击如下4个命令：</p><blockquote><p>hexo init<br>hexo install<br>hexo g<br>hexo s</p></blockquote><p>5.生成完成后，预览。完成后，按下”ctrl+C“即可关闭博客；<br>6.将本地文件用git上传到gitHub（需要科学环境）；<br>7.浏览器打开vercel，跟着官方操作将github的项目部署到vercel（需要科学环境）；<br>至此，你的个人博客搭建完毕，以下是附加功能。</p><h2 id="3-附加功能"><a href="#3-附加功能" class="headerlink" title="3.附加功能"></a>3.附加功能</h2><p>1.自定义域名（vercel添加自动域名请自行百度）；<br>2.用gitee同步，去除科学环境（具体操作请自行百度）；<br>3.博客自定义主题，请参考hexo的官方文档<br>如果相对这方面进行咨询，请致电我的邮件<a href="mailto:&#x78;&#x62;&#100;&#64;&#120;&#x69;&#x61;&#111;&#98;&#117;&#x64;&#105;&#x61;&#110;&#46;&#101;&#117;&#46;&#111;&#x72;&#x67;">&#x78;&#x62;&#100;&#64;&#120;&#x69;&#x61;&#111;&#98;&#117;&#x64;&#105;&#x61;&#110;&#46;&#101;&#117;&#46;&#111;&#x72;&#x67;</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>科技</category>
+      
+      <category>轻松教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+      <tag>blog</tag>
+      
+      <tag>个人博客</tag>
+      
+      <tag>网站搭建</tag>
+      
+      <tag>github的妙用</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>极致性价比！Intel锐炫B580/B570显卡正式发布：性能飙升12.5倍</title>
     <link href="/2024/12/06/%E6%9E%81%E8%87%B4%E6%80%A7%E4%BB%B7%E6%AF%94%EF%BC%81Intel%E9%94%90%E7%82%ABB580-B570%E6%98%BE%E5%8D%A1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%EF%BC%9A%E6%80%A7%E8%83%BD%E9%A3%99%E5%8D%8712-5%E5%80%8D/"/>
     <url>/2024/12/06/%E6%9E%81%E8%87%B4%E6%80%A7%E4%BB%B7%E6%AF%94%EF%BC%81Intel%E9%94%90%E7%82%ABB580-B570%E6%98%BE%E5%8D%A1%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%EF%BC%9A%E6%80%A7%E8%83%BD%E9%A3%99%E5%8D%8712-5%E5%80%8D/</url>
@@ -54,41 +89,6 @@
       <tag>MIUI</tag>
       
       <tag>澎湃OS</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>如何低成本搭建个人博客</title>
-    <link href="/2024/12/05/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2024/12/05/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><p>1.一个github账号；<br>2.一个gitee账号（可选）；<br>3.一个域名（可选，不过大部分域名都要购买获取，免费申请到域名很麻烦）；<br>4.一台个人电脑并准备科学的上网环境。</p><h2 id="2-如何做"><a href="#2-如何做" class="headerlink" title="2.如何做"></a>2.如何做</h2><p>1.打开电脑，在浏览器输入如下网址:</p><blockquote><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p></blockquote><p>2.跟着官方文档安装相关前置软件（需要科学环境）；<br>3.在github上创建一个仓库（名称随意），并用2中所下载的git下载到本地并同步，具体步骤请自行百度（需要科学环境）；<br>4.打开本地仓库的文件夹右键，点击”Open Git Bash here“，并在新出现的页面中敲击如下4个命令：</p><blockquote><p>hexo init<br>hexo install<br>hexo g<br>hexo s</p></blockquote><p>5.生成完成后，预览。完成后，按下”ctrl+C“即可关闭博客；<br>6.将本地文件用git上传到gitHub（需要科学环境）；<br>7.浏览器打开vercel，跟着官方操作将github的项目部署到vercel（需要科学环境）；<br>至此，你的个人博客搭建完毕，以下是附加功能。</p><h2 id="3-附加功能"><a href="#3-附加功能" class="headerlink" title="3.附加功能"></a>3.附加功能</h2><p>1.自定义域名（vercel添加自动域名请自行百度）；<br>2.用gitee同步，去除科学环境（具体操作请自行百度）；<br>3.博客自定义主题，请参考hexo的官方文档<br>如果相对这方面进行咨询，请致电我的邮件<a href="mailto:&#x78;&#x62;&#100;&#64;&#120;&#105;&#x61;&#111;&#98;&#x75;&#x64;&#105;&#97;&#x6e;&#46;&#101;&#117;&#46;&#x6f;&#x72;&#103;">&#x78;&#x62;&#100;&#64;&#120;&#105;&#x61;&#111;&#98;&#x75;&#x64;&#105;&#97;&#x6e;&#46;&#101;&#117;&#46;&#x6f;&#x72;&#103;</a></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>科技</category>
-      
-      <category>轻松教程</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>博客</tag>
-      
-      <tag>blog</tag>
-      
-      <tag>个人博客</tag>
-      
-      <tag>网站搭建</tag>
-      
-      <tag>github的妙用</tag>
       
     </tags>
     
