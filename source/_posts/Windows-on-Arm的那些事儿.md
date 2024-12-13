@@ -2,7 +2,7 @@
 title: Windows on Arm的那些事儿
 date: 2024-11-07 08:15:04
 tags: Windows on Arm, 操作系统
-categories: [科技, 科技杂谈]
+categories: [科技杂谈]
 description: 微软他究竟能不能做成Windows on Arm？
 ---
 ## 对Windows on Arm的控诉

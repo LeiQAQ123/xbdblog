@@ -4,16 +4,43 @@
   
   
   <entry>
-    <title>如何低成本搭建个人博客</title>
-    <link href="/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <title>在2024年如何自建梯子—实现科学上网</title>
+    <link href="/2024/12/13/%E5%9C%A82024%E5%B9%B4%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA%E6%A2%AF%E5%AD%90%E2%80%94%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    <url>/2024/12/13/%E5%9C%A82024%E5%B9%B4%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA%E6%A2%AF%E5%AD%90%E2%80%94%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
     
-    <content type="html"><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><p>1.一个github账号；<br>2.一个gitee账号（可选）；<br>3.一个域名（可选，不过大部分域名都要购买获取，免费申请到域名很麻烦）；<br>4.一台个人电脑并准备科学的上网环境。</p><h2 id="2-如何做"><a href="#2-如何做" class="headerlink" title="2.如何做"></a>2.如何做</h2><p>1.打开电脑，在浏览器输入如下网址:</p><blockquote><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p></blockquote><p>2.跟着官方文档安装相关前置软件（需要科学环境）；<br>3.在github上创建一个仓库（名称随意），并用2中所下载的git下载到本地并同步，具体步骤请自行百度（需要科学环境）；<br>4.打开本地仓库的文件夹右键，点击”Open Git Bash here“，并在新出现的页面中敲击如下4个命令：</p><blockquote><p>hexo init<br>hexo install<br>hexo g<br>hexo s</p></blockquote><p>5.生成完成后，预览。完成后，按下”ctrl+C“即可关闭博客；<br>6.将本地文件用git上传到gitHub（需要科学环境）；<br>7.浏览器打开vercel，跟着官方操作将github的项目部署到vercel（需要科学环境）；<br>至此，你的个人博客搭建完毕，以下是附加功能。</p><h2 id="3-附加功能"><a href="#3-附加功能" class="headerlink" title="3.附加功能"></a>3.附加功能</h2><p>1.自定义域名（vercel添加自动域名请自行百度）；<br>2.用gitee同步，去除科学环境（具体操作请自行百度）；<br>3.博客自定义主题，请参考hexo的官方文档<br>如果相对这方面进行咨询，请致电我的邮件<a href="mailto:&#x78;&#x62;&#100;&#64;&#120;&#x69;&#x61;&#111;&#98;&#117;&#x64;&#105;&#x61;&#110;&#46;&#101;&#117;&#46;&#111;&#x72;&#x67;">&#x78;&#x62;&#100;&#64;&#120;&#x69;&#x61;&#111;&#98;&#117;&#x64;&#105;&#x61;&#110;&#46;&#101;&#117;&#46;&#111;&#x72;&#x67;</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一些国外的网站和服务在国内无法正常访问，比如 Google、YouTube、Instagram、Twitter 等</p><p>虽然有免费的科学上网服务，但是难免对信息安全上不放心，而且质量等也不够理想，毕竟 “天下没有免费的午餐”，想要免费使用优质服务无异于做梦。索性干脆自己搭建一个，一个月最低也就二三十来块，用得舒服也放心。</p><p>本篇就详细介绍下如何使用 VPS 服务器快速安装搭建科学上网服务。图文结合，简单详细，让小白也可以自由上网。</p><p><img src="/" alt="VPS-1"></p><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p><img src="/" alt="VPS-2"></p><p>我们访问国外网站时如上图所示，访问请求和数据都会经过检测，如果检测到访问的是 Google 等网站，就会被干扰导而致无法访问。</p><p>科学上网的原理是通过将用户的网络流量加密并转发到国外服务器，再由这些服务器代为访问互联网，最终将数据返回用户端，实现用户在墙外的上网体验。</p><p><img src="/" alt="VPS-3"></p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>需要用到的资料：</p><p>*注册： 邮箱<br>*付费： 支付宝、Paypal 或 信用卡 皆可</p><p>从 VPS 注册到安装完成的使用方法每步都有截图说明，让完全不懂的小白也可以顺利完成。跟着教程一步步来，复制代码和填写信息时注意核对正确，大概需要 10 分钟即可完成。</p><h2 id="一、注册-安装"><a href="#一、注册-安装" class="headerlink" title="一、注册 &amp; 安装"></a>一、注册 &amp; 安装</h2><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>首先打开 <a href="https://www.vultr.com/">Vultr官网（也可以打开下面的链接）</a><br>[vultr 拉新活动，新用户注册送 $50(30天有效期)]（<a href="https://www.vultr.com/promo/try50/?service=try50%EF%BC%89">https://www.vultr.com/promo/try50/?service=try50）</a><br><img src="/" alt="VPS-4"></p><h3 id="安装VPS"><a href="#安装VPS" class="headerlink" title="安装VPS"></a>安装VPS</h3><h4 id="充值"><a href="#充值" class="headerlink" title="充值"></a>充值</h4><p>注册登录后会进入个人面板，左边栏选择 “Billing”，选择支付方式和金额，付款即可。Vultr 现在支持支付宝，很方便。<br><img src="/" alt="VPS-5"></p><p>选择 “Products” ，按照下图所示选择<br><img src="/" alt="VPS-6"><br><img src="/" alt="VPS-7"><br><img src="/" alt="VPS-8"><br><img src="/" alt="VPS-9"><br>选好后点击右下角的 “Deploy Now” ，开始安装 VPS。</p><h4 id="查看管理-VPS"><a href="#查看管理-VPS" class="headerlink" title="查看管理 VPS"></a>查看管理 VPS</h4><h5 id="可选项（添加公网IPV4地址）"><a href="#可选项（添加公网IPV4地址）" class="headerlink" title="可选项（添加公网IPV4地址）"></a>可选项（添加公网IPV4地址）</h5><p>由于Vultr的VPS只提供免费的IPV6地址，IPV4需两美刀一个月，国外的大部分的网站也开始支持IPV6协议，少部分网站仅支持IPV4协议，如果你想访问所有国外网站，建议购买公网IPV4地址<br><img src="/" alt="VPS-10"><br>如果家里面的网络环境也不支持IPV6协议，也建议购买公网IPV4地址。</p><p>购买后，按照官方文档将得到的IPV4地址进行配置，或者直接最简单的一集，接摧毁这个VPS(Vultr是按照每小时计费，这样只会使你损失0.01美刀，而你有55美刀)，重新按照如上步骤进行购买，即可得到带有公网IPV4的VPS。</p><h5 id="需要记得的信息"><a href="#需要记得的信息" class="headerlink" title="需要记得的信息"></a>需要记得的信息</h5><p>VPS 管理面板，这里需要记录下 IP 地址<strong>（IP Address）、用户名（Username）、密码（Password）</strong>供稍后连接时使用。<br><img src="/" alt="VPS-11"></p><h2 id="二、连接-vps"><a href="#二、连接-vps" class="headerlink" title="二、连接 vps"></a>二、连接 vps</h2><p>使用 ssh 工具连接我们的 VPS，Windows 可以用 xshell、PuTTY（开源免费）等，Mac 可使用自带的终端。</p><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>安装 <a href="https://www.xshell.com/zh/free-for-home-school/">Xshell和XFTP</a> ，打开Xshell软件。<br><img src="/" alt="VPS-12"><br>点击 “文件” → “新建” → “连接”，输入 “名称” 和 “主机” （即VPS ip）。<br><img src="/" alt="VPS-13"><br>点击 “用户身份验证”，输入用户名（默认root）和密码。确认。<br><img src="/" alt="VPS-14"><br>连接 VPS，接受并保存密匙。<br><img src="/" alt="VPS-15"><br><img src="/" alt="VPS-16"><br>出现 root@vultr:~# 即连接成功。<br><img src="/" alt="VPS-17"></p><h3 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h3><p>打开终端，输入以下代码登录 VPS。<br><code>ssh root@ip</code><br>其中 root 即用户名</p><p>将 ip 更改为 VPS 的 IP 地址，回车。<br><img src="/" alt="VPS-18"><br>输入 yes 确认，粘贴密码，回车。需要提醒的是，密码输入时并不会显示出来，直接复制粘贴，回车即可。出现 root@vultr:~# 即连接成功</p><p>如果连接失败，请去vultr官网配置防火墙开放22端口。</p><h2 id="三、-搭建节点"><a href="#三、-搭建节点" class="headerlink" title="三、 搭建节点"></a>三、 搭建节点</h2><p>连接上之后，就可以开始搭建了。</p><h3 id="1-安装谷歌-BBR-加速"><a href="#1-安装谷歌-BBR-加速" class="headerlink" title="1.安装谷歌 BBR 加速"></a>1.安装谷歌 BBR 加速</h3><p>执行下面命令安装谷歌BBR：<br><code>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh</code><br>显示 “Press any key to start…” 按回车确认。回车后会出现一列内核版本让我们选择，输入序号 61 并回车开始安装。<br><img src="/" alt="VPS-19"><br>安装完后，按提示重启 VPS，输入 Y 回车重启。稍候 1min 等待重启完成，再重新连接 Xshell。</p><p>重启后输入：<br><code>lsmod | grep bbr</code><br>出现 tcp_bbr 即说明 BBR 已经启动。</p><h3 id="2-安装X-UI面板"><a href="#2-安装X-UI面板" class="headerlink" title="2.安装X-UI面板"></a>2.安装X-UI面板</h3><p>输入如下代码安装X-UI面板：<br><code>bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)</code><br>根据软件提示进行操作，记住端口号，用户名和密码。</p><p>使用ufw命令开放此端口。</p><p>现在你可以用 <code>ip:端口号</code>访问面板了。（不推荐使用此方法，因为是明文访问，容易给GWF暴露访问内容）</p><h3 id="3-HTTPS加密"><a href="#3-HTTPS加密" class="headerlink" title="3.HTTPS加密"></a>3.HTTPS加密</h3>]]></content>
     
     
     <categories>
       
-      <category>科技</category>
+      <category>轻松教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>VPN</tag>
+      
+      <tag>翻墙</tag>
+      
+      <tag>科学上网</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>如何低成本搭建个人博客</title>
+    <link href="/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%8E%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><p>1.一个github账号；<br>2.一个gitee账号（可选）；<br>3.一个域名（可选，不过大部分域名都要购买获取，免费申请到域名很麻烦）；<br>4.一台个人电脑并准备科学的上网环境。</p><h2 id="2-如何做"><a href="#2-如何做" class="headerlink" title="2.如何做"></a>2.如何做</h2><p>1.打开电脑，在浏览器输入如下网址:</p><blockquote><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p></blockquote><p>2.跟着官方文档安装相关前置软件（需要科学环境）；<br>3.在github上创建一个仓库（名称随意），并用2中所下载的git下载到本地并同步，具体步骤请自行百度（需要科学环境）；<br>4.打开本地仓库的文件夹右键，点击”Open Git Bash here“，并在新出现的页面中敲击如下4个命令：</p><blockquote><p>hexo init<br>hexo install<br>hexo g<br>hexo s</p></blockquote><p>5.生成完成后，预览。完成后，按下”ctrl+C“即可关闭博客；<br>6.将本地文件用git上传到gitHub（需要科学环境）；<br>7.浏览器打开vercel，跟着官方操作将github的项目部署到vercel（需要科学环境）；<br>至此，你的个人博客搭建完毕，以下是附加功能。</p><h2 id="3-附加功能"><a href="#3-附加功能" class="headerlink" title="3.附加功能"></a>3.附加功能</h2><p>1.自定义域名（vercel添加自动域名请自行百度）；<br>2.用gitee同步，去除科学环境（具体操作请自行百度）；<br>3.博客自定义主题，请参考hexo的官方文档<br>如果相对这方面进行咨询，请致电我的邮件<a href="mailto:&#x78;&#x62;&#x64;&#64;&#120;&#105;&#97;&#111;&#x62;&#117;&#100;&#105;&#x61;&#110;&#x2e;&#101;&#x75;&#46;&#111;&#x72;&#x67;">&#x78;&#x62;&#x64;&#64;&#120;&#105;&#97;&#111;&#x62;&#117;&#100;&#105;&#x61;&#110;&#x2e;&#101;&#x75;&#46;&#111;&#x72;&#x67;</a></p>]]></content>
+    
+    
+    <categories>
       
       <category>轻松教程</category>
       
@@ -105,8 +132,6 @@
     
     
     <categories>
-      
-      <category>科技</category>
       
       <category>科技杂谈</category>
       
