@@ -12,3 +12,4 @@ export * from "./radiansToDegrees";
 export * from "./sin";
 export * from "./sinh";
 export * from "./tan";
+export * from "./tanh";
