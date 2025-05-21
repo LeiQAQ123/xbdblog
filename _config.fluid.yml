@@ -980,7 +980,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://rpic.origz.com/api.php?category=pixiv
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
