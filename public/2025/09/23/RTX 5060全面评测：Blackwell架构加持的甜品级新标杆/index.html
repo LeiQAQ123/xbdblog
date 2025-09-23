@@ -1,0 +1,856 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/222.png">
+  <link rel="icon" href="/img/222.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="XBD">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="性能可观的2K游戏显卡！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RTX 5060全面评测：Blackwell架构加持的甜品级新标杆">
+<meta property="og:url" content="http://example.com/2025/09/23/RTX%205060%E5%85%A8%E9%9D%A2%E8%AF%84%E6%B5%8B%EF%BC%9ABlackwell%E6%9E%B6%E6%9E%84%E5%8A%A0%E6%8C%81%E7%9A%84%E7%94%9C%E5%93%81%E7%BA%A7%E6%96%B0%E6%A0%87%E6%9D%86/index.html">
+<meta property="og:site_name" content="小不点的个人博客">
+<meta property="og:description" content="性能可观的2K游戏显卡！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMwaNIpFH5H-exOyWghnEUYvTSkF_oAAh3KMRsOwpFWNCTtbRUnLnABAAMCAAN4AAM2BA.png">
+<meta property="og:image" content="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMvaNIoV85oBvC_dDcCPohoB73buJgAAhbKMRsOwpFWjfPBcEkEjAgBAAMCAAN4AAM2BA.jpg">
+<meta property="og:image" content="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMxaNIpxiNFCncUESceeOHSwrF66dgAAh_KMRsOwpFWBGv-fsTlEzIBAAMCAAN4AAM2BA.jpg">
+<meta property="article:published_time" content="2025-09-23T05:05:03.000Z">
+<meta property="article:modified_time" content="2025-09-23T05:12:51.052Z">
+<meta property="article:author" content="XBD">
+<meta property="article:tag" content="评测">
+<meta property="article:tag" content="显卡">
+<meta property="article:tag" content="英伟达">
+<meta property="article:tag" content="RTX 5060">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMwaNIpFH5H-exOyWghnEUYvTSkF_oAAh3KMRsOwpFWNCTtbRUnLnABAAMCAAN4AAM2BA.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>RTX 5060全面评测：Blackwell架构加持的甜品级新标杆 - 小不点的个人博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  <style>ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }</style>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog of Xbd</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/beijing1.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="RTX 5060全面评测：Blackwell架构加持的甜品级新标杆"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-09-23 13:05" pubdate>
+          2025年9月23日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+<aside class="sidebar d-none d-xl-block" style="margin-right:-1rem;z-index:-1"><ins class="adsbygoogle" style="display:flex;justify-content:center;min-width:160px;max-width:300px;width:100%;height:600px;position:sticky;top:2rem" data-ad-client="ca-pub-3624950794492759" data-ad-slot="1670038454"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></aside>
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">RTX 5060全面评测：Blackwell架构加持的甜品级新标杆</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="RTX-5060全面评测：Blackwell架构加持的甜品级新标杆"><a href="#RTX-5060全面评测：Blackwell架构加持的甜品级新标杆" class="headerlink" title="RTX 5060全面评测：Blackwell架构加持的甜品级新标杆"></a>RTX 5060全面评测：Blackwell架构加持的甜品级新标杆</h1><h3 id="一、产品定位与核心参数"><a href="#一、产品定位与核心参数" class="headerlink" title="一、产品定位与核心参数"></a>一、产品定位与核心参数</h3><p>RTX 5060 作为 NVIDIA 50 系显卡的收官之作，于 2025 年 5 月 20 日正式上市，起售价 2499 元，定位 1080P-2K 分辨率游戏市场，主打 “性价比甜品卡” 标签。其核心规格相比前代 RTX 4060 有显著提升：</p>
+<p><img src="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMwaNIpFH5H-exOyWghnEUYvTSkF_oAAh3KMRsOwpFWNCTtbRUnLnABAAMCAAN4AAM2BA.png" srcset="/img/loading.gif" lazyload alt="RTX 5060 核心参数信息图"></p>
+<ul>
+<li><p><strong>核心架构</strong>：基于 TSMC 4N 制程的 Blackwell 架构 GB206-250 核心</p>
+</li>
+<li><p><strong>核心规格</strong>：3840 个 CUDA 核心（+25%）、120 个第五代 Tensor 核心、30 个第四代 RT 核心</p>
+</li>
+<li><p><strong>显存配置</strong>：8GB GDDR7 显存（128bit 位宽），带宽达 448GB&#x2F;s（GDDR6 的 2 倍）</p>
+</li>
+<li><p><strong>功耗控制</strong>：TDP 145W（+30W），单 8Pin 供电即可驱动</p>
+</li>
+</ul>
+<h3 id="二、外观设计与接口（非公版实测）"><a href="#二、外观设计与接口（非公版实测）" class="headerlink" title="二、外观设计与接口（非公版实测）"></a>二、外观设计与接口（非公版实测）</h3><p>不同品牌的 RTX 5060 在设计上呈现鲜明差异，以两款代表性型号为例：</p>
+<h4 id="1-COLORFIRE-橘影橙-8GB"><a href="#1-COLORFIRE-橘影橙-8GB" class="headerlink" title="1. COLORFIRE 橘影橙 8GB"></a>1. COLORFIRE 橘影橙 8GB</h4><p><img src="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMvaNIoV85oBvC_dDcCPohoB73buJgAAhbKMRsOwpFWjfPBcEkEjAgBAAMCAAN4AAM2BA.jpg" srcset="/img/loading.gif" lazyload alt="COLORFIRE 橘影橙渲染图"></p>
+<ul>
+<li><p><strong>设计风格</strong>：萌系潮流定位，暖白装甲搭配橘色撞色风扇，融入猫耳、猫头图案等 MEOW 系列元素</p>
+</li>
+<li><p><strong>尺寸重量</strong>：314×135.2×50.5mm，重 809g，兼容主流 ATX 机箱</p>
+</li>
+<li><p><strong>灯效接口</strong>：猫耳造型 RGB 灯条（支持自在星球软件调控），3×DP2.1b+1×HDMI2.1b 接口组合</p>
+</li>
+<li><p><strong>散热配置</strong>：3×90mm 环形风扇 + 4+2 相供电，整流环设计提升聚风效率</p>
+</li>
+</ul>
+<h4 id="2-iGame-Ultra-W-DUO-OC-8GB"><a href="#2-iGame-Ultra-W-DUO-OC-8GB" class="headerlink" title="2. iGame Ultra W DUO OC 8GB"></a>2. iGame Ultra W DUO OC 8GB</h4><p><img src="https://image.xbdlei.eu.org/file/AgACAgUAAyEGAASHQ0diAAMxaNIpxiNFCncUESceeOHSwrF66dgAAh_KMRsOwpFWBGv-fsTlEzIBAAMCAAN4AAM2BA.jpg" srcset="/img/loading.gif" lazyload alt="iGame Ultra W DUO OC渲染图"></p>
+<ul>
+<li><p><strong>设计风格</strong>：硬核电竞风，金属背板搭配双风扇散热模组，黑化处理增强质感</p>
+</li>
+<li><p><strong>散热亮点</strong>：定制化热管布局，针对 GDDR7 显存优化散热覆盖，适配 iGame 全家桶装机需求</p>
+</li>
+</ul>
+<h3 id="三、核心技术解析（Blackwell-架构突破）"><a href="#三、核心技术解析（Blackwell-架构突破）" class="headerlink" title="三、核心技术解析（Blackwell 架构突破）"></a>三、核心技术解析（Blackwell 架构突破）</h3><h4 id="1-第五代-Tensor-核心与-DLSS-4"><a href="#1-第五代-Tensor-核心与-DLSS-4" class="headerlink" title="1. 第五代 Tensor 核心与 DLSS 4"></a>1. 第五代 Tensor 核心与 DLSS 4</h4><p>支持 FP4 精度运算，相比 FP16 显存占用减少 50%，AI 算力较上代提升 2 倍，为 DLSS 4 技术奠定基础。DLSS 4 新增多帧生成（MFG）功能，可通过 AI 插帧实现 3 倍帧率提升，且画面合成精度优于前代。</p>
+<h4 id="2-第四代-RT-核心"><a href="#2-第四代-RT-核心" class="headerlink" title="2. 第四代 RT 核心"></a>2. 第四代 RT 核心</h4><ul>
+<li><p><strong>效率升级</strong>：三角形簇集检测技术使光追效率翻倍，是 Turing 架构的 8 倍</p>
+</li>
+<li><p><strong>新技术加持</strong>：支持 RTX Mega Geometry（处理 100 倍三角形数量）和 Curve Primitive（毛发渲染显存占用减至 1&#x2F;3）</p>
+</li>
+<li><p><strong>实测表现</strong>：Port Royal 光追分数 8458 分，较 RTX 4060 提升 37.2%</p>
+</li>
+</ul>
+<h4 id="3-GDDR7-显存技术"><a href="#3-GDDR7-显存技术" class="headerlink" title="3. GDDR7 显存技术"></a>3. GDDR7 显存技术</h4><p>采用 PAM3 信号编码（每两周期传输 3 位数据），实现 “高频低耗” 特性：速率达 GDDR6 的 2 倍，功耗却接近其一半，有效缓解 8GB 显存的带宽压力。</p>
+<h3 id="四、性能实测：1080P-无对手，2K-可一战"><a href="#四、性能实测：1080P-无对手，2K-可一战" class="headerlink" title="四、性能实测：1080P 无对手，2K 可一战"></a>四、性能实测：1080P 无对手，2K 可一战</h3><h4 id="1-理论性能（3DMark）"><a href="#1-理论性能（3DMark）" class="headerlink" title="1. 理论性能（3DMark）"></a>1. 理论性能（3DMark）</h4><table>
+<thead>
+<tr>
+<th>测试项目</th>
+<th>RTX 5060</th>
+<th>RTX 4060</th>
+<th>提升幅度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Time Spy</td>
+<td>13596 分</td>
+<td>10934 分</td>
+<td>+24.3%</td>
+</tr>
+<tr>
+<td>Time Spy Extreme</td>
+<td>6348 分</td>
+<td>5030 分</td>
+<td>+26.2%</td>
+</tr>
+<tr>
+<td>Port Royal</td>
+<td>8458 分</td>
+<td>6163 分</td>
+<td>+37.2%</td>
+</tr>
+<tr>
+<td><em>数据来源：COLORFIRE 型号实测</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="2-游戏实测（1080P-2K-高画质）"><a href="#2-游戏实测（1080P-2K-高画质）" class="headerlink" title="2. 游戏实测（1080P&#x2F;2K 高画质）"></a>2. 游戏实测（1080P&#x2F;2K 高画质）</h4><table>
+<thead>
+<tr>
+<th>游戏名称</th>
+<th>分辨率</th>
+<th>画质设置</th>
+<th>RTX 5060 帧率</th>
+<th>RTX 4060 帧率</th>
+<th>提升幅度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>《CS2》</td>
+<td>1080P</td>
+<td>高画质</td>
+<td>345 帧</td>
+<td>266 帧</td>
+<td>+29.6%</td>
+</tr>
+<tr>
+<td>《CS2》</td>
+<td>2K</td>
+<td>高画质</td>
+<td>240 帧</td>
+<td>188 帧</td>
+<td>+27.6%</td>
+</tr>
+<tr>
+<td>《毁灭战士》</td>
+<td>1080P</td>
+<td>终极画质 + DLSS 平衡</td>
+<td>200 + 帧</td>
+<td>120 帧</td>
+<td>+66.7%</td>
+</tr>
+<tr>
+<td>《赛博朋克 2077》</td>
+<td>1080P</td>
+<td>光追超载 + DLSS 4</td>
+<td>120 帧</td>
+<td>75 帧</td>
+<td>+60%</td>
+</tr>
+<tr>
+<td><em>注：开启 DLSS 4 后性能提升显著，2K 分辨率下部分 3A 游戏需降低纹理画质避免爆显存</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="五、散热与功耗表现"><a href="#五、散热与功耗表现" class="headerlink" title="五、散热与功耗表现"></a>五、散热与功耗表现</h3><ul>
+<li><p><strong>烤机测试</strong>：FurMark 烤机 15 分钟，GPU 核心温度稳定 63℃，显存温度 60℃，风扇噪音低于 45dB（COLORFIRE 型号）</p>
+</li>
+<li><p><strong>功耗控制</strong>：满载功耗 145W，待机功耗仅 8W，搭配 550W 电源即可稳定运行</p>
+</li>
+<li><p><strong>能效比</strong>：每瓦性能较 RTX 4060 提升 18%，主要得益于 GDDR7 显存的低功耗特性</p>
+</li>
+</ul>
+<h3 id="六、性价比与竞品对比"><a href="#六、性价比与竞品对比" class="headerlink" title="六、性价比与竞品对比"></a>六、性价比与竞品对比</h3><h4 id="1-价格定位"><a href="#1-价格定位" class="headerlink" title="1. 价格定位"></a>1. 价格定位</h4><ul>
+<li><p>RTX 5060：2499 元起（8GB）</p>
+</li>
+<li><p>竞品对比：RTX 5060 Ti（3199 元起）、AMD RX 7600 XT（2399 元，6GB GDDR6）</p>
+</li>
+<li><p>升级价值：较 RTX 4060 贵 10%，性能提升 25%-37%，堪称 “40 系钉子户” 升级首选</p>
+</li>
+</ul>
+<h4 id="2-适用人群"><a href="#2-适用人群" class="headerlink" title="2. 适用人群"></a>2. 适用人群</h4><ul>
+<li><p>核心用户：1080P 高刷新率电竞玩家、2K 中等画质 3A 玩家</p>
+</li>
+<li><p>适配场景：《CS2》《永劫无间》等竞技游戏，《赛博朋克 2077》等光追游戏</p>
+</li>
+<li><p>慎选人群：2K 高画质 + 光追全开用户（8GB 显存存在瓶颈）</p>
+</li>
+</ul>
+<h3 id="七、总结：甜品卡的全面进化"><a href="#七、总结：甜品卡的全面进化" class="headerlink" title="七、总结：甜品卡的全面进化"></a>七、总结：甜品卡的全面进化</h3><h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ol>
+<li><p>Blackwell 架构带来 25% 以上的原生性能提升，光追性能暴涨 37%</p>
+</li>
+<li><p>DLSS 4 技术大幅弥补显存不足，1080P 帧率表现无对手</p>
+</li>
+<li><p>2499 元定价延续甜品卡性价比优势，非公版设计选择丰富</p>
+</li>
+</ol>
+<h4 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h4><ol>
+<li><p>8GB 显存仍是短板，2K 高负载场景易爆显存</p>
+</li>
+<li><p>部分非公版型号尺寸较大，小机箱兼容性受限</p>
+</li>
+</ol>
+<h4 id="最终评分：8-5-10"><a href="#最终评分：8-5-10" class="headerlink" title="最终评分：8.5&#x2F;10"></a>最终评分：8.5&#x2F;10</h4><p>RTX 5060 以 “架构升级 + 技术补短板” 的思路，重新定义了 2500 元级显卡的性能基准，尤其适合追求高帧率体验的 1080P 玩家。若能接受 8GB 显存的限制，它将是 2025 年最值得入手的甜品级显卡之一。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%84%E6%B5%8B/" class="category-chain-item">评测</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%AF%84%E6%B5%8B/" class="print-no-link">#评测</a>
+      
+        <a href="/tags/%E6%98%BE%E5%8D%A1/" class="print-no-link">#显卡</a>
+      
+        <a href="/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/" class="print-no-link">#英伟达</a>
+      
+        <a href="/tags/RTX-5060/" class="print-no-link">#RTX 5060</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>RTX 5060全面评测：Blackwell架构加持的甜品级新标杆</div>
+      <div>http://example.com/2025/09/23/RTX 5060全面评测：Blackwell架构加持的甜品级新标杆/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>XBD</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年9月23日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+<div style="width:100%;display:flex;justify-content:center;margin-bottom:1.5rem"><ins class="adsbygoogle" style="display:flex;justify-content:center;max-width:845px;width:100%;height:90px" data-ad-client="ca-pub-3624950794492759" data-ad-slot="1670038454"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div>
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/21/%E7%BA%A2%E7%B1%B3%20Turbo%204%20Pro%20%E8%AF%84%E6%B5%8B%EF%BC%9A%E5%85%A8%E9%9D%A2%E8%B7%83%E5%8D%87%E7%9A%84%E6%80%A7%E8%83%BD%E6%80%AA%E5%85%BD/" title="红米 Turbo 4 Pro 评测：全面跃升的性能怪兽">
+                        <span class="hidden-mobile">红米 Turbo 4 Pro 评测：全面跃升的性能怪兽</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="/js/inject.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3624950794492759" crossorigin="anonymous"></script>
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
